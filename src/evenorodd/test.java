@@ -27,7 +27,6 @@ if (answer == JOptionPane.YES_OPTION) {
 obj.checkEO();
 obj.checkEO();
 obj.checkEO();
-obj.checkEO();
 // User clicked YES.
     } else if (answer == JOptionPane.NO_OPTION) {
     System.exit(0);
