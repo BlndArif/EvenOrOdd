@@ -17,7 +17,8 @@ public class EvenOrOdd {
    
     
     public void checkEO(){
-EvenOrOdd obj=new EvenOrOdd();
+
+        EvenOrOdd obj=new EvenOrOdd();
         String b=JOptionPane.showInputDialog("Please Enter A Number To Check If itis Even Or Odd");
 int c=Integer.parseInt(b);
 if (c% 2 == 0)
@@ -27,15 +28,17 @@ JOptionPane.showMessageDialog(null,"The number is Odd","Even or Odd?",JOptionPan
 
 
   // User clicked NO.
-    }
-}
+    
+    JFrame frame = new JFrame();
+    String message = "Try another Number?";
+    int answer = JOptionPane.showConfirmDialog(frame, message);
+    while (answer == JOptionPane.YES_OPTION) {
+obj.checkEO();
 
-/*
-    
-    
-    /**
-     * @param args the command line arguments
-     */
-   
+// User clicked YES.
+}
+       while (answer == JOptionPane.NO_OPTION) {
+    System.exit(0);       
+       }}}
     
 
